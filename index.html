@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Generic data-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title data-i18n="WebTittle"></title>
+        <meta name="author" content="Eneko Tejera">
+        <meta name="keywords" content="Curriculum, Resume, portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Web page .ico-->
+        <link rel="icon" type="image/x-icon" href="Assets/LOGO.ico">
+
+        <!-- Data needed to load the texts and language -->
+        <meta id="LanguageURL" data-url="TXT-Files/About-me_">
+        <meta id="Language" data-url="en">
+
+        <!--Loading logo-->
+        <script>
+            document.documentElement.classList.add("page-loading");
+        </script>
+
+        <!--CSS links-->
+        <link rel="stylesheet" href="CSS-Files/General.css" />
+        <link rel="stylesheet" href="CSS-Files/About-me.css" />
+
+        <!-- .js includes -->
+        <script src="JS-Files/FadingText.js"></script>
+        <script src="JS-Files/Transition.js"></script>
+        <script src="JS-Files/LanguageSubmenu.js"></script>
+        <script src="JS-Files/Carousel.js"></script>
+        <script src="JS-Files/NavMenu.js"></script>
+    </head>
+
+    <!-- Load the scrolling event -->
+    <body onload="AddScrollEvent()">
+
+        <header>
+            <!-- NavBar(Actual navbar in the .html) -->
+            <div id="navbar"></div>
+
+            <!-- Introduction -->
+            <section class="Introduction">
+
+                <!-- Introduction background -->
+                <div class="IntroductionOverlay"></div>
+
+                <!-- links beginning -->
+                <div id="IntroductionLinks">
+                    <a href="https://github.com/EnekoTejera">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/eneko-tejera-34b664352/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="https://www.youtube.com/@EnekoTejera">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                    </a>
+                </div>
+
+                <!-- Initial screen -->
+                <section id="InitialScreen">
+
+                    <!-- "Programmer/Designer" text -->
+                    <div>
+                        <div class="BigTittle">
+                            <h1 class="Tittles">
+                                <span class="MyTittles MyTittlesTop" data-i18n="Tittle_0">
+                                </span>
+
+                                <span class="Divider" aria-hidden="true">/</span>
+
+                                <span class="MyTittles MyTittlesBottom" data-i18n="Tittle_1">
+                                </span>
+                            </h1>
+                        </div>
+
+                            <!-- Skill tags -->
+                        <div class="SkillTags" aria-hidden="true">
+                            <span data-i18n="Tittle_Label_0"></span>
+                            <span data-i18n="Tittle_Label_1"></span>
+                            <span data-i18n="Tittle_Label_2"></span>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </header>
+
+        <!-- Main contend of the web page(Presentation, Skills and Outro) -->
+        <main>
+
+            <!-- Presentation -->
+            <section class="Presentation">
+                <h1 data-i18n="About-me"></h1>
+                <p data-i18n="PresentationParagraph_0"></p>
+                <p data-i18n="PresentationParagraph_1"></p>
+                <p data-i18n="PresentationParagraph_2"></p>
+            </section>
+
+            <!-- Images with my skills -->
+            <section class="MySkills">
+
+                <!-- First Skill -->
+                <a class="SkillRow" href="HTML-Files/Games.html">
+                    <div class="SkillTxt">
+                        <h2 data-i18n="Skills_0"></h2>
+                        <p data-i18n="Skills_0_1"></p>
+                    </div>
+
+                    <div class="SkilImg">
+                            <img src="Assets/00_AM/AboutMeSkills_1.webp" alt="Proyecto">
+                    </div>
+                </a>
+
+                <!-- Second Skill -->
+                <a class="SkillRow reverse" href="HTML-Files/CS.html">
+                    <div class="SkilImg">
+                            <img src="Assets/00_AM/AboutMeSkills_2.webp" alt="Proyecto">
+                    </div>
+
+                    <div class="SkillTxt">
+                        <h2 data-i18n="Skills_1"></h2>
+                        <p data-i18n="Skills_1_1"></p>
+                    </div>
+                </a>
+
+                <!-- Third Skill -->
+                <a class="SkillRow" href="HTML-Files/Other-projects.html">
+                    <div class="SkillTxt">
+                        <h2 data-i18n="Skills_2"></h2>
+                        <p data-i18n="Skills_2_1"></p>
+                    </div>
+
+                    <div class="SkilImg">
+                            <img src="Assets/00_AM/AboutMeSkills_3.webp" alt="Proyecto">
+                    </div>
+                </a>
+            </section>
+
+            <!-- Outro -->
+            <section class="Outro">
+                <h1 data-i18n="Outro_0"></h1>
+
+                <!-- "Some of my projects" section -->
+                <div class="OutroCarousel">
+                    <button type="button" class="OutroArrow OutroArrowLeft" onclick="scrollOutro(-1)">&#10094;</button>
+
+                    <div class="OutroImgTxt" id="OutroImgTxt">
+                        <a href="HTML-Files/Games.html#Agatha" class="OutroImg">
+                            <img src="Assets/00_AM/P_00.webp" alt="BelovedAgatha">
+                            <div class="OutroTxt" data-i18n="Outro_1"></div>
+                        </a>
+
+                        <a href="https://www.digipen.es/es/galeria/noticias/mucho-macho-48-horas" class="OutroImg">
+                            <img src="Assets/00_AM/P_01.webp" alt="MuchoMacho">
+                            <div class="OutroTxt" data-i18n="Outro_2"></div>
+                        </a>
+
+                        <a href="HTML-Files/Games.html#CrashNBurn" class="OutroImg">
+                            <img src="Assets/00_AM/P_02.webp" alt="CrashNBurn">
+                            <div class="OutroTxt" data-i18n="Outro_3"></div>
+                        </a>
+
+                        <a href="HTML-Files/Other-projects.html#TerrainGenerator" class="OutroImg">
+                            <img src="Assets/00_AM/P_03.webp" alt="TerrainGenerator">
+                            <div class="OutroTxt" data-i18n="Outro_4"></div>
+                        </a>
+                    </div>
+
+                    <button type="button" class="OutroArrow OutroArrowRight" onclick="scrollOutro(1)">&#10095;</button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer(Actual Footer in the .html) -->
+        <div id="footer"></div>
+
+        <!-- .js includes -->
+        <script src="JS-Files/General.js"></script>
+        <script src="JS-Files/LanguageLoader.js"></script>
+    </body>
+</html>
