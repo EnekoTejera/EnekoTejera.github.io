@@ -1,0 +1,32 @@
+ui.talk=E — Talk
+ui.activate=E — Activate
+ui.examine=E — Examine
+ui.teleport=E — Teleport
+ui.open=E — Open
+ui.close=E — Close
+ui.interact=E — Interact
+ui.continue=E — Continue
+ui.exit=Esc — Exit
+
+npc.Zeios.name=Zeios
+npc.Zeios=Welcome, traveler!|This is the world I have created throughout my life with my projects.|I invite you to explore it and interact with everything you see.|I hope you enjoy it as much as I have enjoyed creating it.
+npc.Zeios_1=I hope you are enjoying the experience.
+npc.Zeios_2=You have made it to the end.|At least for now.|This world is constantly expanding and grows with every project I make.|I hope you liked it, and until next time.
+
+painting.I.name=Inertia
+painting.I=Inertia is a top-down puzzle game in which the player must guide a ball into a goal by bouncing it off blocks. The game is centered on understanding the movement of the ball, predicting its trajectory, and using the available geometry to reach the objective. Its simple premise creates a gameplay experience focused on spatial reasoning and precision. 
+
+painting.ZD.name=Zonk Deliveries
+painting.ZD=Zonk Deliveries is a platformer in which the player takes control of Garg, a delivery worker who must transport packages to their destinations as quickly as possible. The levels are filled with uneven terrain and obstacles, while the player's ink-shooting weapon provides a distinctive movement mechanic that allows Garg to slide and jump through the environment.
+
+painting.CNB.name=CrashNBurn
+painting.CNB=CrashNBurn is a low-poly space racing game featuring highly customizable spacecraft. Players compete on space-themed tracks while using different ship components and abilities to gain advantages or interfere with their opponents. The combination of racing, customization, and competitive mechanics creates a gameplay experience focused on speed, positioning, and tactical decision-making.
+
+painting.BA.name=Beloved Agatha.
+painting.BA=Beloved Agatha is a single-player, first-person puzzle game centered on investigation, exploration, and environmental storytelling. The player takes the role of Edmund, who returns to his old orphanage after receiving a mysterious letter from Agatha, a childhood friend he has not heard from in years. As he explores the abandoned building, he must solve puzzles, uncover clues, and piece together the events surrounding the disappearance of his friend and the orphanage.
+
+painting.PTP.name=Pop The Pops
+painting.PTP=Pop the Pops is a fast-paced local multiplayer platformer in which two players compete across frenetic obstacle courses. Players must navigate the level, bounce through its challenges, and achieve the highest score before their opponent. The game is designed around short, competitive sessions and direct player-versus-player interaction.
+
+painting.MM.name=Mucho Macho
+painting.MM=Mucho Macho is an asymmetric two-player cooperative puzzle game developed in Unity. One player plays on a computer while the other uses a mobile device. Together, they must identify a target by finding and assembling pieces of a mask, then communicating the completed design to locate the correct person in the wrestling ring. The project focuses on communication, cooperation, and the design of an unusual cross-platform multiplayer experience.

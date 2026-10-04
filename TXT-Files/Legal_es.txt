@@ -1,0 +1,51 @@
+WebTittle=Eneko Tejera | Aviso legal y privacidad
+
+Link_0=Sobre mí
+Link_1=Motores
+Link_2=Juegos
+Link_3=Ciberseguridad
+Link_4=Otros proyectos
+LanguageButtom=Idiomas
+SpanishButtom=Español
+EnglishButtom=Inglés
+
+LegalTittle=AVISO LEGAL Y PRIVACIDAD
+
+Legal_0_Title=Titular y finalidad del sitio web
+Legal_0_Text=Este sitio web es un portfolio personal cuya única finalidad es complementar mi currículum y darme a conocer profesionalmente en mi búsqueda de empleo por cuenta ajena. No realiza ninguna actividad económica: no contiene publicidad, no vende productos ni servicios y no genera ingresos.
+Legal_0_Owner=Titular: Eneko Tejera
+Legal_0_Contact=Contacto: enekotejera@gmail.com
+
+Legal_1_Title=Propiedad intelectual
+Legal_1_Text=Salvo que se indique lo contrario, los textos, imágenes, vídeos, diseños y demás contenidos de este sitio web son de mi autoría o se utilizan con autorización de sus titulares, y están protegidos por la normativa de propiedad intelectual. Los nombres, marcas y obras de terceros que aparecen en el sitio pertenecen a sus respectivos propietarios y se mencionan únicamente con fines informativos. No se permite su reproducción, distribución o modificación sin autorización previa.
+
+Legal_2_Title=Enlaces y contenidos de terceros
+Legal_2_Text=Este sitio web puede contener enlaces a páginas de terceros y vídeos alojados en YouTube. No me hago responsable del contenido, las políticas de privacidad ni las cookies de esos sitios externos.
+
+Legal_3_Title=Responsabilidad
+Legal_3_Text=Me esfuerzo por mantener la información de este sitio actualizada y correcta, pero no garantizo que esté libre de errores ni que el acceso sea continuo. El titular no se responsabiliza de los daños derivados del uso de la información publicada.
+
+Legal_4_Title=Protección de datos personales
+Legal_4_Text=Este sitio web no dispone de formularios, cuentas de usuario, comentarios ni herramientas de analítica o publicidad, por lo que no recopila datos personales de forma automática. La única vía de contacto es mi correo electrónico.
+Legal_4_Controller=Responsable del tratamiento: Eneko Tejera. Contacto: enekotejera@gmail.com
+Legal_4_Purpose=Finalidad: si me escribes, trataré tu nombre, tu dirección de correo y el contenido de tu mensaje únicamente para responderte y, en su caso, gestionar una posible oferta o proceso de selección.
+Legal_4_Basis=Base legal: tu consentimiento, que otorgas al ponerte en contacto conmigo voluntariamente.
+Legal_4_Retention=Conservación: durante el tiempo necesario para atender tu consulta o proceso y, después, mientras puedan derivarse responsabilidades. Puedes pedirme que borre tus datos en cualquier momento.
+Legal_4_Recipients=Destinatarios: no cedo tus datos a terceros, salvo obligación legal. Mi proveedor de correo electrónico actúa como encargado del tratamiento para prestar el servicio de correo.
+Legal_4_Rights=Derechos: puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a mi correo electrónico. Si consideras que no se han respetado, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
+
+Legal_5_Title=Cookies y vídeos de YouTube
+Legal_5_Text=Este sitio web no utiliza cookies propias de analítica, publicidad ni seguimiento. Los vídeos de YouTube no se cargan al entrar en la página: solo se cargan cuando pulsas el botón de reproducir. En ese momento YouTube (Google) puede instalar cookies y recibir datos como tu dirección IP, según su propia política de privacidad. Si no quieres que esto ocurra, no reproduzcas los vídeos.
+Legal_5_Link=Política de privacidad de Google
+
+Legal_6_Title=Idioma guardado en tu navegador
+Legal_6_Text=Este sitio guarda en tu navegador (localStorage) el idioma que elijas, únicamente para recordar tu preferencia entre páginas. No se usa con ningún otro fin, no se comparte con terceros y, al ser estrictamente necesario para el funcionamiento que solicitas al elegir idioma, no requiere tu consentimiento.
+
+Legal_7_Title=Legislación aplicable y cambios
+Legal_7_Text=Este sitio web se rige por la legislación española. Puedo modificar este aviso en cualquier momento para adaptarlo a cambios legales o del propio sitio. La versión vigente es la publicada en esta página.
+
+FooterMess_0=¿Tienes un proyecto en mente?
+FooterMess_1=Puedes escribirme a:
+FooterMess_2=Volver arriba ↑
+FooterMess_3=Diseñado y desarrollado por Eneko Tejera
+FooterMess_4=Aviso legal y privacidad

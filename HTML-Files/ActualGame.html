@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Generic data-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../Assets/LOGO.ico">
+        <title data-i18n="WebTittle"></title>
+
+        <script>
+            document.documentElement.classList.add("page-loading");
+        </script>
+
+        <!-- Data needed to load the texts and language -->
+        <meta id="LanguageURL" data-url="../TXT-Files/ActualGame_">
+        <meta id="Language" data-url="en">
+
+        <!--CSS links-->
+        <link rel="stylesheet" href="../CSS-Files/General.css" />
+        <link rel="stylesheet" href="../CSS-Files/ActualGame.css">
+
+        <!-- .js includes -->
+        <script src="../JS-Files/Transition.js"></script>
+        <script src="../JS-Files/LanguageSubmenu.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- NavBar(Actual navbar in the .html) -->
+            <div id="navbar"></div>
+        </header>
+
+        <!-- Game -->
+        <main id="GameSection">
+
+            <div id="GameWrapper">
+
+                <canvas id="gameCanvas" tabindex="0"></canvas>
+
+                <!-- HUD -->
+                <div id="GameHud">
+                    <div id="MuteIndicator">🔊</div>
+                    <div data-i18n="ui.exit">ESC → Salir</div>
+                </div>
+
+
+                <!-- Dialogue box -->
+                <div id="DialogueBox" class="hidden">
+                    <div id="DialogueName"></div>
+                    <div id="DialogueText"></div>
+                    <div id="DialogueHint" data-i18n="ui.continue">E → Continuar</div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer(Actual Footer in the .html) -->
+        <div id="footer"></div>
+
+        <script type="module" src="../JS-Files/Game/ActualGame.js"></script>
+        <script src="../JS-Files/General.js"></script>
+        <script src="../JS-Files/LanguageLoader.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+[MuchoMacho]
+Tittle=Mucho Macho
+Image0=../Assets/01_GAMES/MM_0.webp
+Image1=../Assets/01_GAMES/MM_1.webp
+Image2=../Assets/01_GAMES/MM_2.webp
+Link=https://cebalya.itch.io/mucho-macho
+Buttom=Ir al juego
+Labels=UNITY,PC Y ANDROID,PUZLES,COOPERATIVO,ASIMÉTRICO PARA 2 JUGADORES EN RED LOCAL
+SectionTittle0=Descripción del proyecto 
+ModalText0=Mucho Macho es un juego de puzles cooperativo asimétrico para dos jugadores desarrollado en Unity. Un jugador juega en un ordenador mientras que el otro utiliza un dispositivo móvil. Juntos, deben identificar un objetivo encontrando y ensamblando las piezas de una máscara y, posteriormente, comunicando el diseño completado para localizar a la persona correcta en el ring de lucha libre. El proyecto se centra en la comunicación, la cooperación y el diseño de una experiencia multijugador multiplataforma poco convencional. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El juego combina una aplicación de escritorio con una aplicación complementaria para Android conectada a través de una red Wi-Fi local. Esta configuración requirió coordinar la información de la partida entre dos dispositivos diferentes y diseñar un modelo de interacción en el que cada jugador tiene acceso a información distinta.
+
+[PopThePops]
+Tittle=Pop The Pops
+Image0=../Assets/01_GAMES/PTP_0.webp
+Image1=../Assets/01_GAMES/PTP_1.webp
+Image2=../Assets/01_GAMES/PTP_2.webp
+Link=https://ign-ceo.itch.io/pop-the-pops
+Buttom=Ir al juego
+Labels=UNITY,PC,MULTIJUGADOR LOCAL,PLATAFORMAS,DOS JUGADORES 
+SectionTittle0=Descripción del proyecto 
+ModalText0=Pop the Pops es un juego de plataformas multijugador local de ritmo rápido en el que dos jugadores compiten a través de frenéticos circuitos de obstáculos. Los jugadores deben recorrer el nivel, superar sus desafíos y conseguir la mayor puntuación antes que su oponente. El juego está diseñado en torno a sesiones cortas y competitivas y a la interacción directa entre jugadores. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El proyecto se centra en un sistema de plataformas con controles responsivos, una jugabilidad multijugador competitiva y la implementación de circuitos de obstáculos que fomentan el movimiento, la precisión en el momento de las acciones y la toma rápida de decisiones. Su diseño enfatiza la interacción inmediata y la rejugabilidad mediante partidas cortas.
+
+[BelovedAgatha]
+Tittle=Beloved Agatha.
+Image0=../Assets/01_GAMES/BA_0.webp
+Image1=../Assets/01_GAMES/BA_1.webp
+Image2=../Assets/01_GAMES/BA_2.webp
+Link=https://www.digipen.es/showcase/student-games/beloved-agatha
+Buttom=Ir al juego
+Labels=UNREAL,PC,PUZLES,PRIMERA PERSONA 
+SectionTittle0=Descripción del proyecto 
+ModalText0=Beloved Agatha. es un juego de puzles para un jugador en primera persona centrado en la investigación, la exploración y la narrativa ambiental. El jugador asume el papel de Edmund, quien regresa a su antiguo orfanato tras recibir una misteriosa carta de Agatha, una amiga de la infancia de la que no ha sabido nada durante años. Mientras explora el edificio abandonado, debe resolver puzles, descubrir pistas y reconstruir los acontecimientos relacionados con la desaparición de su amiga y del orfanato. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El proyecto combina la exploración en primera persona con puzles ambientales y el descubrimiento narrativo. Su diseño se basa en la relación entre el entorno, los objetos interactivos y las pistas distribuidas por el escenario para revelar progresivamente la historia.
+
+[CrashNBurn]
+Tittle=CrashNBurn
+Image0=../Assets/01_GAMES/CNB_0.webp
+Image1=../Assets/01_GAMES/CNB_1.webp
+Image2=../Assets/01_GAMES/CNB_2.webp
+Link=https://www.digipen.es/es/galeria/juegos-de-estudiantes/crashnburn
+Buttom=Ir al juego
+Labels=MOTOR PROPIO,PC,CARRERAS ESPACIALES,MULTIJUGADOR LOCAL,LOW-POLY 
+SectionTittle0=Descripción del proyecto 
+ModalText0=CrashNBurn es un juego de carreras espaciales con estética low-poly que cuenta con naves altamente personalizables. Los jugadores compiten en circuitos ambientados en el espacio mientras utilizan diferentes componentes y habilidades de sus naves para obtener ventajas o interferir con sus oponentes. La combinación de carreras, personalización y mecánicas competitivas crea una experiencia de juego centrada en la velocidad, el posicionamiento y la toma de decisiones tácticas. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El proyecto combina la jugabilidad de carreras con vehículos personalizables y mecánicas competitivas. Su desarrollo implicó la creación de sistemas que permiten diferentes configuraciones de naves, interacciones durante las carreras y el comportamiento de los oponentes dentro de los circuitos.
+
+[ZonkDeliveries]
+Tittle=Zonk Deliveries
+Image0=../Assets/01_GAMES/ZD_0.webp
+Image1=../Assets/01_GAMES/ZD_1.webp
+Image2=../Assets/01_GAMES/ZD_2.webp
+Link=https://games.digipen.edu/games/zonk-deliveries
+Buttom=Ir al juego
+Labels=MOTOR PROPIO,PC,PLATAFORMAS 
+SectionTittle0=Descripción del proyecto 
+ModalText0=Zonk Deliveries es un juego de plataformas en el que el jugador controla a Garg, un repartidor que debe transportar paquetes hasta sus destinos lo más rápido posible. Los niveles están llenos de terrenos irregulares y obstáculos, mientras que el arma que dispara tinta proporciona una mecánica de movimiento característica que permite a Garg deslizarse y saltar por el entorno. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El proyecto se basa en una jugabilidad centrada en el movimiento y en la interacción entre las habilidades del personaje y la geometría del nivel. La mecánica de la tinta introduce una capa adicional de control, permitiendo al jugador utilizar el entorno y su propio movimiento para desplazarse de forma eficiente.
+
+[Inertia]
+Tittle=Inertia
+Image0=../Assets/01_GAMES/I_0.webp
+Image1=../Assets/01_GAMES/I_1.webp
+Image2=../Assets/01_GAMES/I_2.webp
+Link=https://games.digipen.edu/games/inertia
+Buttom=Ir al juego
+Labels=MOTOR PROPIO,PC,PUZLES, VISTA AÉREA 
+SectionTittle0=Descripción del proyecto 
+ModalText0=Inertia es un juego de puzles con vista aérea en el que el jugador debe guiar una pelota hasta un objetivo haciéndola rebotar contra bloques. El juego se centra en comprender el movimiento de la pelota, predecir su trayectoria y utilizar la geometría disponible para alcanzar el objetivo. Su premisa sencilla crea una experiencia de juego centrada en el razonamiento espacial y la precisión. 
+SectionTittle1=Enfoque técnico 
+ModalText1=El proyecto se centra en la interacción entre el movimiento, las colisiones y la geometría del nivel. El desafío principal consiste en comprender cómo se comporta la pelota al interactuar con los diferentes bloques y utilizar ese comportamiento para resolver cada puzle.

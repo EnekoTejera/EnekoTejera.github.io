@@ -1,0 +1,227 @@
+/***************************************************************
+                    PARAGRAPH SECTION
+***************************************************************/
+/* #region */
+
+.Paragraph {
+  background   : rgba(28, 30, 33, 0.88);
+  border       : 1px solid rgba(120, 220, 255, 0.10);
+  box-shadow   : 0 10px 35px rgba(0, 0, 0, 0.25),
+                 inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  position     : relative;
+  text-align   : center;
+  margin       : 2rem auto;
+  padding      : 2rem;
+  border-radius: 16px;
+  width        : calc(100% - 2rem);
+  transition   : border-color 0.3s ease,
+                 box-shadow 0.3s ease,
+                 transform 0.3s ease;
+}
+
+.Paragraph:hover {
+  border-color: rgba(100, 210, 255, 0.25);
+  box-shadow  : 0 14px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(80, 200, 255, 0.035);
+}
+
+/*PROJECT TITLE*/
+.Paragraph h1 {
+  color         : #f2f5f7;
+  font-size     : clamp(1.5rem, 2.2vw, 2.2rem);
+  font-weight   : 600;
+  margin        : 0 0 1.5rem 0;
+  letter-spacing: 0.08em;
+  line-height   : 1.2;
+  text-transform: uppercase;
+}
+
+.Paragraph h1::after {
+  content      : "";
+  background   : rgba(80, 210, 255, 0.75);
+  display      : block;
+  width        : 45px;
+  height       : 2px;
+  margin       : 0.8rem auto 0;
+  border-radius: 2px;
+  transition   : width 0.3s ease,
+                 background 0.3s ease;
+}
+
+.Paragraph:hover h1::after {
+  background: rgba(80, 210, 255, 1);
+  width     : 70px;
+}
+
+/*IMAGE/VIDEO CONTAINERS*/
+.ParagraphImage {
+  background    : rgba(24, 26, 28, 0.8);
+  border        : 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow    : 0 5px 15px rgba(0, 0, 0, 0.2);
+  width         : calc(33.333% - 1rem);
+  margin        : 0.4rem;
+  height        : 300px;
+  border-radius : 12px;
+  vertical-align: top;
+  overflow      : hidden;
+  display       : inline-block;
+}
+
+.ParagraphImage img,
+.ParagraphImage video {
+  width     : 100%;
+  height    : 100%;
+
+  display   : block;
+  object-fit: contain;
+}
+
+.ParagraphImage:hover {
+  border-color: rgba(80, 210, 255, 0.35);
+  box-shadow  : 0 10px 25px rgba(0, 0, 0, 0.35),
+                0 0 18px rgba(80, 210, 255, 0.06);
+  transform   : translateY(-4px);
+}
+
+.ParagraphImage:hover img {
+  filter: brightness(1.08);
+}
+
+/*PROJECT DESCRIPTION*/
+.Paragraph p {
+  color       : rgba(235, 238, 240, 0.82);
+
+  width       : min(85%, 900px);
+  margin      : 1.5rem auto 0;
+  line-height : 1.75;
+
+  font-size   : clamp(0.95rem, 1.1vw, 1.05rem);
+  text-align  : justify;
+  text-justify: inter-word;
+}
+
+/*LABELS*/
+.Labels {
+  width      : min(85%, 900px);
+  margin     : 1.5rem auto 0;
+
+  align-items: center;
+  display    : flex;
+  flex-wrap  : wrap;
+
+  gap        : 8px;
+}
+
+.Labels span {
+  border         : 1px solid rgba(100, 210, 255, 0.12);
+  color          : rgba(170, 225, 245, 0.9);
+  background     : rgba(42, 48, 52, 0.85);
+
+  letter-spacing : 0.08em;
+  font-size      : 0.8rem;
+  font-weight    : 500;
+
+  padding        : 7px 13px;
+
+  border-radius  : 999px;
+
+  display        : inline-flex;
+  align-items    : center;
+  justify-content: center;
+
+  font-family    : monospace;
+
+  transition     : background 0.25s ease,
+                   border-color 0.25s ease,
+                   color 0.25s ease,
+                   transform 0.25s ease,
+                   box-shadow 0.25s ease;
+}
+
+.Labels span:hover {
+  box-shadow  : 0 4px 12px rgba(50, 190, 240, 0.08);
+  background  : rgba(55, 90, 105, 0.75);
+  border-color: rgba(80, 210, 255, 0.4);
+  color       : #c9f2ff;
+
+  transform   : translateY(-2px);
+}
+/* #endregion */
+
+/***************************************************************
+                    ACCESIBILITY
+***************************************************************/
+/* #region */
+
+@media (prefers-reduced-motion: reduce) {
+  .Paragraph,
+  .Paragraph h1::after,
+  .Labels span {
+    transition: none;
+  }
+}
+/* #endregion */
+
+/***************************************************************
+                    MOVILES & TABLETS
+***************************************************************/
+/* #region */
+
+/* <1024px */
+@media (max-width: 1024px) {
+  .Paragraph {
+    width  : calc(100% - 1.5rem);
+    padding: 1.5rem;
+  }
+
+  .ParagraphImage {
+    width : calc(50% - 1rem);
+    height: 260px;
+  }
+}
+
+/* <768px */
+@media (max-width: 768px) {
+  .Paragraph {
+    width  : calc(100% - 1rem);
+    margin : 1.5rem auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .Paragraph h1 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  .ParagraphImage {
+    width : 100%;
+    height: 220px;
+    margin: 0.4rem 0;
+  }
+
+  .Paragraph p {
+    width: 100%;
+  }
+
+  .Labels {
+    width          : 100%;
+    justify-content: center;
+  }
+}
+
+/* <480px */
+@media (max-width: 480px) {
+  .Paragraph {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .ParagraphImage {
+    height: 180px;
+  }
+
+  .Labels span {
+    font-size: 0.7rem;
+    padding  : 6px 10px;
+  }
+}
+/* #endregion */

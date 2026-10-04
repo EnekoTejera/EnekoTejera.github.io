@@ -1,0 +1,34 @@
+WebTittle=Eneko Tejera | Videojuegos
+
+Link_0=Sobre mí
+Link_1=Motores
+Link_2=Juegos
+Link_3=Ciberseguridad
+Link_4=Otros proyectos
+LanguageButtom=Idiomas
+SpanishButtom=Español
+EnglishButtom=Inglés
+
+IntroductionTittle=MIS JUEGOS
+IntroductionButton=EXPLORA JUGANDO
+IntroductionScroll=-DESLIZA PARA EXPLORAR-
+
+Game_0=Inertia
+Game_0_Description=Inertia es un juego Top-Down en el que el jugador debe conseguir que una pelota llegue a una meta rebotando contra bloques.
+Game_1=Zonk Deliveries
+Game_1_Description=Juega como Garg, un repartidor que acaba de ser contratado por una empresa de envíos. Su misión es entregar los paquetes a los clientes en el menor tiempo posible, evitando obstáculos en terrenos llenos de baches. Garg utilizará una pistola que dispara tinta, lo que le permitirá deslizarse y saltar por todo el nivel hasta llegar a su destino.
+Game_2=CrashNBurn
+Game_2_Description=Juego de carreras de temática espacial de pocos polígonos, con naves altamente personalizables, que proporcionan una manera de obstaculizar a los oponentes o una ventaja más directa.
+Game_3=Beloved Agatha.
+Game_3_Description=Beloved Agatha. es un juego para un jugador, en primera persona, sobre la investigación del antiguo orfanato del protagonista, Edmund, después de recibir una misteriosa carta de una amiga de la infancia a la que no ha vuelto a escuchar en años: una chica llamada Agatha.
+Game_4=Pop the pops
+Game_4_Description=¡Compite contra tu viejo enemigo y rebota por frenéticos circuitos de obstáculos para derrotarlo! ¡Consigue la puntuación más alta para ganar!
+Game_5=Mucho macho
+Game_5_Description=Es tu primer día como cazarrecompensas y te han encargado acabar con un nuevo luchador que se ha vuelto bastante popular en tu zona. Encuentra las piezas de la máscara de tu objetivo y, con la ayuda de tu supervisor, localízalo y neutralízalo antes de que descubran tu tapadera.
+GameExtend=Más información
+
+FooterMess_0=¿Tienes un proyecto en mente?
+FooterMess_1=Puedes escribirme a:
+FooterMess_2=Volver arriba ↑
+FooterMess_3=Diseñado y desarrollado por Eneko Tejera
+FooterMess_4=Aviso legal y privacidad

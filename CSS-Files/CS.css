@@ -1,0 +1,124 @@
+/***************************************************************
+                    INTRODUCTION SECTION
+***************************************************************/
+/* #region */
+.Introduction {
+  background-image   : url("../Assets/02_CS/Fondo_CS.webp");
+  color              : white;
+
+  height             : calc(100svh - var(--navbar-height));
+  width              : 100vw;
+
+  background-repeat  : no-repeat;
+  background-position: center;
+  background-size    : cover;
+
+  position           : relative;
+  overflow           : hidden;
+}
+
+.Tittle {
+  position     : absolute;
+
+  bottom       : 7.55vh;
+  left         : 1.25vw;
+  right        : 1.25vw;
+
+  font-size    : clamp(2rem, 10vw, 10rem);
+  max-width    : 97vw;
+  line-height  : 1;
+
+  text-align   : left;
+
+  word-break   : break-word;
+  overflow-wrap: break-word;
+
+  text-shadow  : 6px 6px 0px #000280,
+                 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+/* #endregion */
+
+/***************************************************************
+                    STUDIES SECTION
+***************************************************************/
+/* #region */
+.Studies {
+  background-color: rgba(31, 31, 31,0.75);
+  padding         : 1%;
+  text-align      : center;
+}
+
+.Paragraph {
+  margin    : 1%;
+  text-align: left;
+}
+
+.Paragraph:hover {
+  translate: 1%;
+}
+
+.Paragraph p {
+  max-width     : 80%;
+
+  text-align    : left;
+
+  padding-top   : 1%;
+  padding-bottom: 1%;
+}
+/* #endregion */
+
+/***************************************************************
+                    MOVILES & TABLETS
+***************************************************************/
+/* #region */
+
+/* <1024px */
+@media (max-width: 1024px) {
+  .Tittle {
+    bottom     : calc(2.5vh + env(safe-area-inset-bottom, 0px));
+    left       : 4vw;
+    right      : 4vw;
+    max-width  : 92vw;
+    font-size  : clamp(2rem, 10vw, 6rem);
+    text-shadow: 4px 4px 0px #000280,
+                 7px 7px 0px rgba(0, 0, 0, 0.4);
+  }
+
+  .Studies {
+    padding: 2%;
+  }
+
+  .Paragraph p {
+    max-width: 90%;
+  }
+}
+
+/* <768px */
+@media (max-width: 768px) {
+  .Tittle {
+    top       : 75%;
+    bottom    : auto;
+    transform : translateY(-50%);
+    text-align: center;
+  }
+
+  .Paragraph {
+    margin: 3%;
+  }
+
+  .Paragraph p {
+    max-width: 100%;
+  }
+}
+
+/* <480px */
+@media (max-width: 480px) {
+  .Introduction {
+    background-image: url("../Assets/02_CS/Fondo_CS_Mobile.webp");
+  }
+
+  .Tittle {
+    font-size: clamp(1.5rem, 10vw, 4rem);
+  }
+}
+/* #endregion */

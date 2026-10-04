@@ -1,0 +1,882 @@
+/***************************************************************
+                    GENERAL SECTION
+***************************************************************/
+/* #region */
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbar-height: 70px;
+}
+
+body {
+  background : rgb(0, 0, 0);
+  color      : rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x : hidden;
+}
+
+span {
+  color: white;
+}
+/* #endregion */
+
+/***************************************************************
+                    NAV SECTION
+***************************************************************/
+/* #region */
+.Current-Page {
+  color: rgb(92, 92, 92);
+}
+
+nav {
+  position   : relative;
+  width      : 100%;
+  height     : 70px;
+  background : rgb(22, 22, 22);
+  display    : flex;
+  align-items: center;
+  z-index    : 1000;
+}
+
+.logo {
+  position   : absolute;
+  left       : 40px;
+  color      : azure;
+  font-weight: bold;
+  font-size  : 1.5rem;
+}
+
+.Language {
+  position   : absolute;
+  right      : 40px;
+  font-weight: bold;
+  font-size  : 1.5rem;
+}
+
+.menu {
+  width          : 100%;
+  display        : flex;
+  justify-content: center;
+  gap            : 15px;
+}
+
+.menu a {
+  color          : white;
+  text-decoration: none;
+  font-weight    : 600;
+  transition     : 0.3s;
+}
+
+.menu a[href]:hover {
+  color: rgb(80, 210, 255);
+}
+
+nav .menu a.CurrentLink {
+  color         : #006ce7 !important;
+  cursor        : default;
+  pointer-events: none;
+}
+/* #endregion */
+
+/***************************************************************
+                    MENU TOGGLE SECTION
+***************************************************************/
+/* #region */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display        : none;
+  flex-direction : column;
+  justify-content: center;
+  gap            : 5px;
+
+  width          : 28px;
+  height         : 20px;
+
+  cursor         : pointer;
+  position       : relative;
+  z-index        : 1200;
+}
+
+.nav-toggle-label span {
+  display      : block;
+  width        : 100%;
+  height       : 2px;
+
+  background   : white;
+  border-radius: 2px;
+
+  transition   : transform 0.3s ease,
+                 opacity 0.25s ease;
+}
+/* #endregion */
+
+/***************************************************************
+                    LANGUAGES SECTION
+***************************************************************/
+/* #region */
+.Languages {
+  width       : 200px;
+  max-width   : 100%;
+  position    : relative;
+  margin-right: 1%;
+}
+
+.Lbuttom {
+  position       : relative;
+  width          : 100%;
+  min-height     : 45px;
+  padding        : 12px 40px 12px 14px;
+
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  background     : #454546;
+  color          : white;
+
+  border         : none;
+  border-radius  : 10px;
+
+  cursor         : pointer;
+  font-size      : 16px;
+  font-family    : inherit;
+
+  transition     : background 0.25s ease,
+                   border-radius 0.25s ease;
+}
+
+.Lbuttom:hover {
+  background: #006de0;
+}
+
+.Languages:has(.submenu.Active) .Lbuttom {
+  background   : #006de0;
+  border-radius: 10px 10px 0 0;
+}
+
+.language-text {
+  text-align: center;
+}
+
+.language-arrow {
+  position     : absolute;
+  top          : 50%;
+  right        : 15px;
+
+  width        : 9px;
+  height       : 9px;
+
+  border-right : 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+
+  transform    : translateY(-65%) rotate(45deg);
+
+  transition   : transform 0.25s ease;
+}
+
+.Languages:has(.submenu.Active) .language-arrow {
+  transform: translateY(-35%) rotate(225deg);
+}
+
+/*SUBMENU*/
+.submenu {
+  position      : absolute;
+  top           : 100%;
+  right         : 0;
+  z-index       : 1000;
+
+  width         : 100%;
+  padding       : 6px 0 0;
+
+  background    : #2c2c2c;
+  border-radius : 0 0 10px 10px;
+
+  opacity       : 0;
+  transform     : translateY(-8px);
+
+  pointer-events: none;
+
+  transition    : opacity 0.25s ease,
+                  transform 0.25s ease;
+}
+
+.submenu.Active {
+  opacity       : 1;
+  transform     : translateY(0);
+  pointer-events: auto;
+}
+
+.submenu button {
+  display      : block;
+  width        : 100%;
+  min-height   : 40px;
+
+  padding      : 10px 14px;
+
+  background   : transparent;
+  color        : rgb(248, 247, 247);
+
+  border       : none;
+  border-radius: 0;
+
+  cursor       : pointer;
+  font-size    : 15px;
+  font-family  : inherit;
+  text-align   : left;
+
+  transition   : background 0.2s ease,
+                 color 0.2s ease;
+}
+
+.submenu button + button {
+  border-top: 1px solid #444444;
+}
+
+.submenu button:hover {
+  background: #3a3a3a;
+  color     : white;
+}
+
+.submenu button:last-child {
+  border-radius: 0 0 10px 10px;
+}
+/* #endregion */
+
+/***************************************************************
+                    FOOTER SECTION
+***************************************************************/
+/* #region */
+.SiteFooter {
+  width     : 100%;
+  padding   : 55px 0 25px;
+
+  background: rgb(22, 22, 22);
+  color     : #ffffff;
+
+  border-top: 1px solid #2b2b2b;
+}
+
+.FooterContainer {
+  width : min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.FooterTop {
+  display        : flex;
+  align-items    : flex-end;
+  justify-content: space-between;
+  gap            : 30px;
+
+  margin-bottom  : 35px;
+}
+
+.FooterMail {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-start;
+  gap           : 12px;
+}
+
+.FooterMessage {
+  color      : #c2c2c2;
+  font-size  : 16px;
+  line-height: 1.6;
+}
+
+.FooterMail > a {
+  color          : #ffffff;
+  font-size      : 16px;
+  font-weight    : 600;
+  line-height    : 1.3;
+
+  text-decoration: none;
+  overflow-wrap  : anywhere;
+}
+
+.FooterMail > a:hover {
+  color: #0078ff;
+}
+
+.FooterRow {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  gap            : 30px;
+
+  padding-top    : 25px;
+  border-top     : 1px solid #2b2b2b;
+}
+
+.SocialLinks {
+  display    : flex;
+  align-items: center;
+  gap        : 14px;
+  flex-wrap  : wrap;
+}
+
+.SocialLinks a {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  width          : 42px;
+  height         : 42px;
+
+  border         : 1px solid #3a3a3a;
+  border-radius  : 50%;
+
+  background     : #191919;
+
+  transition     : background 0.2s ease,
+                   border-color 0.2s ease,
+                   transform 0.2s ease;
+}
+
+.SocialLinks a:hover {
+  background  : #252525;
+  border-color: #0078ff;
+  transform   : translateY(-3px);
+}
+
+.SocialLinks img {
+  display   : block;
+
+  width     : 20px;
+  height    : 20px;
+
+  object-fit: contain;
+}
+
+.FooterMeta {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-end;
+  gap           : 6px;
+
+  text-align    : right;
+}
+
+.FooterTopLink,
+.FooterLegalLink {
+  color          : #c2c2c2;
+
+  font-size      : 14px;
+  line-height    : 1.4;
+  text-decoration: none;
+
+  transition     : color 0.2s ease;
+}
+
+.FooterTopLink:hover,
+.FooterLegalLink:hover {
+  color: #0078ff;
+}
+
+.FooterCopyright {
+  color    : #ffffff;
+  font-size: 14px;
+}
+
+.FooterTechnical {
+  color    : #777777;
+  font-size: 12px;
+}
+/* #endregion */
+
+/***************************************************************
+                    MODAL WINDOW SECTION
+***************************************************************/
+/* #region */
+.modal {
+  display        : none;
+  position       : fixed;
+  inset          : 0;
+  background     : rgba(0, 0, 0, 0.65);
+  color          : white;
+
+  justify-content: center;
+  align-items    : center;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+
+  z-index        : 1000;
+}
+
+.modal.Active {
+  display: flex;
+}
+
+.ModalContend {
+  position      : relative;
+
+  width         : 90vw;
+  height        : 90vh;
+
+  background    : rgba(24, 24, 24, 0.90);
+  color         : white;
+  border-radius : 15px;
+
+  padding       : clamp(20px, 4vw, 50px);
+
+  overflow-y    : auto;
+  overflow-x    : hidden;
+
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  text-align    : center;
+}
+
+#modalTitulo {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  margin   : 0 0 25px 0;
+  max-width: 100%;
+}
+
+.ModalImages {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  gap            : 20px;
+
+  width          : 100%;
+
+  margin         : 20px 0 30px;
+}
+
+.ModalImages img {
+  width        : calc((100% - 40px) / 3);
+  height       : auto;
+
+  max-height   : 35vh;
+
+  border-radius: 15px;
+}
+
+.ModalLabels {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-wrap      : wrap;
+
+  gap            : 10px;
+
+  width          : 100%;
+  margin         : 0 0 30px 0;
+}
+
+.SectionBack {
+  background   : rgba(32, 32, 32, 0.9);
+  margin-bottom: 1%;
+  max-width    : 85%;
+  border-radius: 15px;
+}
+
+.ModalContend h1 {
+  width      : 100%;
+  max-width  : 85%;
+
+  text-align : left;
+
+  font-size  : clamp(1rem, 1.5vw, 1.4rem);
+  line-height: 1.6;
+
+  margin     : 1% 1% 0 1%;
+}
+
+.ModalContend::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ModalContend::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ModalContend::-webkit-scrollbar-thumb {
+  background   : rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.ModalContend::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+hr {
+  width        : 85%;
+  border       : none;
+  border-top   : 2px solid #ccc;
+  margin-bottom: 5px;
+  margin-left  : 1%;
+}
+
+.ModalContend p {
+  font-size   : clamp(1rem, 1.5vw, 1.4rem);
+  line-height : 1.6;
+
+  width       : 100%;
+  max-width   : 85%;
+  text-align  : justify;
+  text-justify: inter-word;
+
+  margin      : 1% 0 1% 1%;
+}
+
+.MLabel {
+  padding      : 6px 14px;
+
+  border-radius: 20px;
+
+  background   : #797979;
+  color        : #ffffff;
+
+  font-size    : clamp(0.8rem, 1vw, 1rem);
+}
+
+.CloseModal {
+  position  : absolute;
+  top       : 15px;
+  right     : 20px;
+
+  border    : none;
+  background: none;
+  color     : white;
+
+  font-size : clamp(25px, 3vw, 35px);
+
+  cursor    : pointer;
+}
+
+.LinkButton {
+  align-self     : flex-start;
+  margin-left    : 7.5%;
+  margin-top     : 30px;
+  margin-bottom  : 20px;
+
+  padding        : 10px 18px;
+
+  border         : none;
+  border-radius  : 8px;
+
+  background     : #222;
+  color          : white;
+
+  font-size      : 0.95rem;
+  cursor         : pointer;
+
+  text-align     : left;
+  text-decoration: none;
+
+  transition     : background 0.2s ease,
+                   transform 0.2s ease;
+}
+
+.LinkButton:hover {
+  background: #217dbb;
+}
+/* #endregion */
+
+/***************************************************************
+                    PAGE TRANSITION SECTION
+***************************************************************/
+/* #region */
+:root {
+  --transition-bg  : #05070b;
+  --transition-logo: #eaf6ff;
+  --transition-glow: #4da6ff;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html.page-loading,
+html.page-leaving {
+  overflow           : hidden;
+  overscroll-behavior: none;
+}
+
+html.page-loading body {
+  visibility: hidden;
+}
+
+.page-transition {
+  position           : fixed;
+  inset              : 0;
+
+  display            : grid;
+  place-items        : center;
+
+  background         : #05070b;
+
+  z-index            : 999999;
+
+  visibility         : visible;
+  pointer-events     : all;
+
+  overflow           : hidden;
+
+  overscroll-behavior: none;
+  touch-action       : none;
+}
+
+.page-transition.is-hidden {
+  opacity       : 0;
+  visibility    : hidden;
+
+  pointer-events: none;
+
+  transition    : opacity 500ms cubic-bezier(.77, 0, .18, 1),
+                  visibility 0s linear 500ms;
+}
+
+.page-transition__logo {
+  position: relative;
+
+  width   : min(220px, 32vw);
+  height  : min(220px, 32vw);
+
+  overflow: visible;
+
+  z-index : 2;
+}
+
+.page-transition__logo path {
+  fill             : none;
+
+  stroke           : var(--transition-logo);
+  stroke-width     : 4.2;
+  stroke-linecap   : round;
+  stroke-linejoin  : round;
+
+  stroke-dasharray : 2000;
+  stroke-dashoffset: 2000;
+
+  filter           : drop-shadow(0 0 0 transparent);
+
+  transition       : stroke-dashoffset 650ms cubic-bezier(.77, 0, .18, 1),
+                     filter 250ms ease;
+}
+
+.page-transition__logo path.is-drawing {
+  filter: drop-shadow(0 0 5px rgba(77, 166, 255, .85))
+          drop-shadow(0 0 15px rgba(77, 166, 255, .35));
+}
+
+.page-transition__logo path.is-complete {
+  stroke-dashoffset: 0;
+
+  filter           : drop-shadow(0 0 4px rgba(77, 166, 255, .65))
+                     drop-shadow(0 0 12px rgba(77, 166, 255, .25));
+}
+
+.page-transition::before {
+  content       : "";
+  position      : absolute;
+
+  width         : min(420px, 70vw);
+  aspect-ratio  : 1;
+  border-radius : 50%;
+
+  background    : radial-gradient(circle, rgba(77, 166, 255, .075) 0%, rgba(77, 166, 255, 0) 68%);
+
+  pointer-events: none;
+}
+/* #endregion */
+
+/***************************************************************
+                    MOVILES & TABLETS
+***************************************************************/
+/* #region */
+
+/* <1024px */
+@media (max-width: 1024px) {
+  .FooterRow {
+    gap: 20px;
+  }
+
+  .ModalContend {
+    width : 95vw;
+    height: 95vh;
+  }
+}
+
+/* <768px */
+@media (max-width: 768px) {
+  nav {
+    height         : 64px;
+    padding        : 0 20px;
+    justify-content: space-between;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+    order  : 1;
+  }
+
+  .Languages {
+    order: 2;
+    width: 150px;
+  }
+
+  .Lbuttom {
+    font-size : 13px;
+    min-height: 38px;
+    padding   : 8px 30px 8px 12px;
+  }
+
+  .language-arrow {
+    right : 12px;
+    width : 7px;
+    height: 7px;
+  }
+
+  .menu {
+    position      : fixed;
+    top           : 64px;
+    left          : 0;
+    z-index       : 999;
+
+    flex-direction: column;
+    align-items   : stretch;
+    gap           : 0;
+
+    background    : rgb(18, 18, 18);
+    box-shadow    : 0 12px 25px rgba(0, 0, 0, 0.35);
+
+    max-height    : 0;
+    overflow      : hidden;
+    opacity       : 0;
+
+    transition    : max-height 0.35s ease,
+                    opacity 0.3s ease;
+  }
+
+  .nav-toggle:checked ~ .menu {
+    max-height: 420px;
+    opacity   : 1;
+  }
+
+  .menu a {
+    padding      : 16px 24px;
+    font-size    : 1rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .menu a:hover,
+  .menu a:focus-visible {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .menu span {
+    display: none;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .FooterTop {
+    flex-direction: column;
+    align-items   : flex-start;
+    gap           : 20px;
+  }
+
+  .FooterRow {
+    flex-direction: column;
+    align-items   : flex-start;
+  }
+
+  .FooterMeta {
+    align-items: flex-start;
+    text-align : left;
+    width      : 100%;
+  }
+
+  .ModalImages {
+    flex-wrap: wrap;
+    gap      : 10px;
+  }
+
+  .ModalImages img {
+    width     : calc((100% - 10px) / 2);
+    max-height: 25vh;
+  }
+
+  .ModalContend h1,
+  .ModalContend p {
+    max-width: 95%;
+  }
+
+  .SectionBack {
+    max-width: 95%;
+  }
+
+  .LinkButton {
+    margin-left: 5%;
+  }
+}
+
+/* <480px */
+@media (max-width: 480px) {
+  .Languages {
+    width: 125px;
+  }
+
+  .Lbuttom {
+    font-size : 12px;
+    min-height: 34px;
+    padding   : 7px 26px 7px 10px;
+  }
+
+  .language-arrow {
+    right : 10px;
+    width : 6px;
+    height: 6px;
+  }
+
+  .menu a {
+    padding  : 14px 20px;
+    font-size: 0.95rem;
+  }
+
+  .ModalImages {
+    flex-direction: column;
+  }
+
+  .ModalImages img {
+    width     : 100%;
+    max-height: 30vh;
+  }
+
+  #modalTitulo {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+  }
+
+  .FooterMail > a {
+    font-size: 14px;
+  }
+
+  .page-transition__logo {
+    width : min(160px, 45vw);
+    height: min(160px, 45vw);
+  }
+}
+/* #endregion */

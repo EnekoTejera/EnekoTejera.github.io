@@ -1,0 +1,31 @@
+WebTittle=Eneko Tejera | Ciberseguridad
+
+Link_0=Sobre mí
+Link_1=Motores
+Link_2=Juegos
+Link_3=Ciberseguridad
+Link_4=Otros proyectos
+LanguageButtom=Idiomas
+SpanishButtom=Español
+EnglishButtom=Inglés
+
+Tittle=CIBERSEGURIDAD
+
+Studies_0=MI EXPERIENCIA
+Studies_1=He cursado mis estudios en Maristak Durango, donde me he formado en el ámbito del desarrollo de sistemas y la ciberseguridad. Durante mi formación he adquirido conocimientos y habilidades relacionados con el desarrollo tecnológico, la seguridad informática y la creación de soluciones digitales.
+
+ETHICAL-HACKING_0=HACKING ÉTICO
+POST-EXPLOITATION_0=POSTEXPLOTACIÓN
+FORENSICS_0=FORENSE
+PYTHON-PROGRAMMING_0=PROGRAMACIÓN EN PYTHON Y AUTOMATIZACIÓN
+
+ETHICAL-HACKING=Experiencia en evaluación de la seguridad de sistemas, redes y aplicaciones mediante técnicas de hacking ético, identificando vulnerabilidades y proponiendo medidas de mitigación.
+POST-EXPLOITATION=Conocimientos en análisis de postexplotación, evaluación del alcance de accesos comprometidos y recopilación de información en entornos de pruebas autorizados.
+FORENSICS=Experiencia en análisis forense digital, recopilación y preservación de evidencias, e investigación de incidentes de seguridad para determinar su origen y alcance.
+PYTHON-PROGRAMMING=Desarrollo de scripts y herramientas en Python para automatizar tareas de ciberseguridad, como el análisis de archivos, procesamiento de registros y detección de anomalías.
+
+FooterMess_0=¿Tienes un proyecto en mente?
+FooterMess_1=Puedes escribirme a:
+FooterMess_2=Volver arriba ↑
+FooterMess_3=Diseñado y desarrollado por Eneko Tejera
+FooterMess_4=Aviso legal y privacidad

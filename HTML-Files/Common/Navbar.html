@@ -1,0 +1,57 @@
+<!-- Navigation bar -->
+<nav>
+
+    <!-- Mobile menu toggle(implementation in the .css) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Links -->
+    <div class="menu">
+        <a href="../index.html" data-i18n="Link_0">Sobre mí</a>
+        <span>|</span>
+        <a href="Games.html" data-i18n="Link_2">Juegos</a>
+        <span>|</span>
+        <a href="CS.html" data-i18n="Link_3">CS</a>
+        <span>|</span>
+        <a href="Other-projects.html" data-i18n="Link_4">Otros proyectos</a>
+    </div>
+
+    <!-- Languages -->
+    <div class="Languages">
+
+        <!-- Button -->
+        <button
+            id="Languages-menu"
+            type="button"
+            onclick="toggleMenu()"
+            class="Lbuttom"
+            aria-expanded="false"
+            aria-controls="submenu">
+
+            <span class="language-text" data-i18n="LanguageButtom"></span>
+            <span class="language-arrow" aria-hidden="true"></span>
+        </button>
+
+        <!-- Submenu -->
+        <div id="submenu" class="submenu" hidden>
+            <button
+                id="SpanishB"
+                type="button"
+                onclick="LoadLanguage('es')"
+                data-i18n="SpanishButtom">
+
+            </button>
+
+            <button
+                id="EnglishB"
+                type="button"
+                onclick="LoadLanguage('en')"
+                data-i18n="EnglishButtom">
+            </button>
+        </div>
+    </div>
+</nav>

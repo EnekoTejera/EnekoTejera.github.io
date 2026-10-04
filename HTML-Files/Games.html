@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Generic data-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title data-i18n="WebTittle"></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Web page .ico-->
+        <link rel="icon" type="image/x-icon" href="../Assets/LOGO.ico">
+
+        <!-- Data needed to load the texts and language -->
+        <meta id="Language" data-url="en">
+        <meta id="MW" data-url="../TXT-Files/GamesMW_">
+        <meta id="LanguageURL" data-url="../TXT-Files/Games_">
+
+        <!-- Load Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!--Loading logo-->
+        <script>
+            document.documentElement.classList.add("page-loading");
+        </script>
+
+        <!--CSS links-->
+        <link rel="stylesheet" href="../CSS-Files/Games.css">
+        <link rel="stylesheet" href="../CSS-Files/General.css" />
+        <link rel="stylesheet" href="../CSS-Files/YouTubeConsent.css" />
+
+        <!-- .js includes -->
+        <script src="../JS-Files/Transition.js"></script>
+        <script src="../JS-Files/LanguageSubmenu.js"></script>
+        <script src="../JS-Files/ModalWindowGames.js"></script>
+        <script src="../JS-Files/NavMenu.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- NavBar(Actual navbar in the .html) -->
+            <div id="navbar"></div>
+
+            <section class="GamesIntroduction">
+                <!-- Page Tittle -->
+                <h1 data-i18n="IntroductionTittle"></h1>
+
+                <!-- Go to the game Button -->
+                <a href="ActualGame.html">
+                    <button id="GameMode" class="Gamebuttom" data-i18n="IntroductionButton">
+                    </button>
+                </a>
+            </section>
+        </header>
+
+        <main>
+            <!-- 6º game -->
+            <section class="ContentSection">
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_5"></h2>
+                        <p data-i18n="Game_5_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="MuchoMacho"
+                        class="PageButton  ModalButton"
+                        data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="Um9EySlExNI"
+                        data-thumb="../Assets/Thumbnails/MM_T.webp"
+                        data-title="Mucho Macho">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5º game -->
+            <section class="ContentSection reverse">
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_4"></h2>
+                        <p data-i18n="Game_4_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="PopThePops"
+                    class="PageButton  ModalButton"
+                    data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="zRCOw4pQvCg"
+                        data-thumb="../Assets/Thumbnails/PTP_T.webp"
+                        data-title="Pop The Pops">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4º game -->
+            <section class="ContentSection" id="Agatha">
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_3"></h2>
+                        <p data-i18n="Game_3_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="BelovedAgatha"
+                    class="PageButton  ModalButton"
+                    data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="uC1kPs8fCto"
+                        data-thumb="../Assets/Thumbnails/BA_T.webp"
+                        data-title="Beloved Agatha">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3º game -->
+            <section class="ContentSection reverse" id="CrashNBurn">
+
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_2"></h2>
+                        <p data-i18n="Game_2_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="CrashNBurn"
+                    class="PageButton  ModalButton"
+                    data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="zNP3G0KptD4"
+                        data-thumb="../Assets/Thumbnails/CNB_T.webp"
+                        data-title="Crash N' Burn">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2º game -->
+            <section class="ContentSection">
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_1"></h2>
+                        <p data-i18n="Game_1_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="ZonkDeliveries"
+                    class="PageButton  ModalButton"
+                    data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="HM96xkqmrjQ"
+                        data-thumb="../Assets/Thumbnails/ZD_T.webp"
+                        data-title="Zonk Deliveries">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 1º game -->
+            <section class="ContentSection reverse">
+                <div class="Text">
+                    <!-- Game description -->
+                    <div class="TextContent">
+                        <h2 data-i18n="Game_0"></h2>
+                        <p data-i18n="Game_0_Description"></p>
+                    </div>
+
+                    <!-- Information button -->
+                    <a data-id="Inertia"
+                    class="PageButton  ModalButton"
+                    data-i18n="GameExtend">
+                    </a>
+                </div>
+
+                <!-- Game video -->
+                <div class="video">
+                    <div class="YtConsent"
+                        data-yt="q_VIq6m9Pcc"
+                        data-thumb="../Assets/Thumbnails/I_T.webp"
+                        data-title="Inertia">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal window(Actual Modal window in the .html) -->
+            <div id="ModalWindow"></div>
+        </main>
+
+        <!-- Footer(Actual Footer in the .html) -->
+        <div id="footer"></div>
+
+        <!-- .js includes -->
+        <script src="../JS-Files/General.js"></script>
+        <script src="../JS-Files/LanguageLoader.js"></script>
+        <script src="../JS-Files/YouTubeConsent.js"></script>
+    </body>
+</html>

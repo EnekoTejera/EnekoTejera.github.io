@@ -1,0 +1,43 @@
+WebTittle=Eneko Tejera | Programador y Diseñador
+
+Link_0=Sobre mí
+Link_1=Motores
+Link_2=Juegos
+Link_3=Ciberseguridad
+Link_4=Otros proyectos
+LanguageButtom=Idiomas
+SpanishButtom=Español
+EnglishButtom=Inglés
+
+Tittle_0=PROGRAMADOR
+Tittle_1=DISEÑADOR
+Tittle_Label_0=C++
+Tittle_Label_1=DISEÑO
+Tittle_Label_2=CIBERSEGURIDAD
+Tittle_Scroll=DESLIZA PARA EXPLORAR
+
+About-me=Sobre mí
+PresentationParagraph_0=Déjame contarte quién soy: mi nombre es Eneko Tejera, soy un programador y diseñador español especializado en C++, con una gran pasión por los videojuegos y los ordenadores. Soy graduado de la universidad de Digipen en simulación interactiva en tiempo real.
+PresentationParagraph_1=Aunque mi experiencia se centra principalmente en el desarrollo de software con C++, eso no me frena a la hora de aprender cosas nuevas, llegando a estudiar ciberseguridad, un campo que me ha apasionado durante mucho tiempo y que considero que, con la creciente influencia de la tecnología en nuestro día a día, nunca está de más aprender.
+PresentationParagraph_2=A continuación te dejo un poco más de información sobre mí y sobre mis proyectos para que puedas conocerme un poco mejor.
+
+Skills_0=Programación en C++
+Skills_0_1=Experiencia en el desarrollo de software usando C++. Orientada principalmente al desarrollo de motores de videojuegos, así como de los propios juegos.
+
+Skills_1=Ciberseguridad
+Skills_1_1=Estudios en ciberseguridad, conocimientos en exploración de vulnerabilidades en páginas web, así como en automatización de procesos con Python y análisis forense de sistemas infectados.
+
+Skills_2=Y mucho más...
+Skills_2_1=Me apasiona aprender cosas nuevas y por ello siempre intento expandir horizontes; aquí podrás ver algunos de mis proyectos.
+
+Outro_0=Algunos de mis proyectos
+Outro_1=Beloved Agatha.
+Outro_2=Game Jam 2026
+Outro_3=Algunos de mis proyectos
+Outro_4=Algunos de mis proyectos
+
+FooterMess_0=¿Tienes un proyecto en mente?
+FooterMess_1=Puedes escribirme a:
+FooterMess_2=Volver arriba ↑
+FooterMess_3=Diseñado y desarrollado por Eneko Tejera
+FooterMess_4=Aviso legal y privacidad

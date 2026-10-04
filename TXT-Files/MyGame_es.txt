@@ -1,0 +1,32 @@
+ui.talk=E — Hablar
+ui.activate=E — Activar
+ui.examine=E — Examinar
+ui.teleport=E — Teletransportarse
+ui.open=E — Abrir
+ui.close=E — Cerrar
+ui.interact=E — Interactuar
+ui.continue=E — Continuar
+ui.exit=Esc — Salir
+
+npc.Zeios.name=Zeios
+npc.Zeios=Bienvenido viajero!|Este es el mundo que he creado a lo largo de mi vida con mis proyectos.|Te invito a explorarlo e interactuar con todo lo que veas.|Espero que lo disfrutes tanto como yo he disfrutado crearlo.
+npc.Zeios_1=Espero que estes disfrutando de la experiencia.
+npc.Zeios_2=Has llegado hasta el final. | Al menos por ahora. |Este mundo esta en constante expansión y crece con cada proyecto que hago. | Espero que te haya gustado y hasta la próxima.
+
+painting.I.name=Inertia
+painting.I=Inertia es un juego de puzles con vista aérea en el que el jugador debe guiar una pelota hasta un objetivo haciéndola rebotar contra bloques. El juego se centra en comprender el movimiento de la pelota, predecir su trayectoria y utilizar la geometría disponible para alcanzar el objetivo. Su premisa sencilla crea una experiencia de juego centrada en el razonamiento espacial y la precisión.
+
+painting.ZD.name=Zonk Deliveries
+painting.ZD=Zonk Deliveries es un juego de plataformas en el que el jugador controla a Garg, un repartidor que debe transportar paquetes hasta sus destinos lo más rápido posible. Los niveles están llenos de terrenos irregulares y obstáculos, mientras que el arma que dispara tinta proporciona una mecánica de movimiento característica que permite a Garg deslizarse y saltar por el entorno.
+
+painting.CNB.name=CrashNBurn
+painting.CNB=CrashNBurn es un juego de carreras espaciales con estética low-poly que cuenta con naves altamente personalizables. Los jugadores compiten en circuitos ambientados en el espacio mientras utilizan diferentes componentes y habilidades de sus naves para obtener ventajas o interferir con sus oponentes. La combinación de carreras, personalización y mecánicas competitivas crea una experiencia de juego centrada en la velocidad, el posicionamiento y la toma de decisiones tácticas.
+
+painting.BA.name=Beloved Agatha.
+painting.BA=Beloved Agatha. es un juego de puzles para un jugador en primera persona centrado en la investigación, la exploración y la narrativa ambiental. El jugador asume el papel de Edmund, quien regresa a su antiguo orfanato tras recibir una misteriosa carta de Agatha, una amiga de la infancia de la que no ha sabido nada durante años. Mientras explora el edificio abandonado, debe resolver puzles, descubrir pistas y reconstruir los acontecimientos relacionados con la desaparición de su amiga y del orfanato.
+
+painting.PTP.name=Pop The Pops
+painting.PTP=Pop the Pops es un juego de plataformas multijugador local de ritmo rápido en el que dos jugadores compiten a través de frenéticos circuitos de obstáculos. Los jugadores deben recorrer el nivel, superar sus desafíos y conseguir la mayor puntuación antes que su oponente. El juego está diseñado en torno a sesiones cortas y competitivas y a la interacción directa entre jugadores.
+
+painting.MM.name=Mucho Macho
+painting.MM=Mucho Macho es un juego de puzles cooperativo asimétrico para dos jugadores desarrollado en Unity. Un jugador juega en un ordenador mientras que el otro utiliza un dispositivo móvil. Juntos, deben identificar un objetivo encontrando y ensamblando las piezas de una máscara y, posteriormente, comunicando el diseño completado para localizar a la persona correcta en el ring de lucha libre. El proyecto se centra en la comunicación, la cooperación y el diseño de una experiencia multijugador multiplataforma poco convencional.

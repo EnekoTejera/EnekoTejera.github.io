@@ -1,0 +1,51 @@
+WebTittle=Eneko Tejera | Legal notice and privacy
+
+Link_0=About me
+Link_1=Engines
+Link_2=Games
+Link_3=Cybersecurity
+Link_4=Other Projects
+LanguageButtom=Languages
+SpanishButtom=Spanish
+EnglishButtom=English
+
+LegalTittle=LEGAL NOTICE AND PRIVACY
+
+Legal_0_Title=Website owner and purpose
+Legal_0_Text=This website is a personal portfolio whose sole purpose is to complement my CV and present myself professionally while I look for employment. It carries out no economic activity: it contains no advertising, sells no products or services, and generates no income.
+Legal_0_Owner=Owner: Eneko Tejera
+Legal_0_Contact=Contact: enekotejera@gmail.com
+
+Legal_1_Title=Intellectual property
+Legal_1_Text=Unless otherwise stated, the texts, images, videos, designs and other content of this website are my own work or are used with their owners' permission, and are protected by intellectual property law. Names, trademarks and works of third parties that appear on the site belong to their respective owners and are mentioned for informational purposes only. Reproduction, distribution or modification without prior permission is not allowed.
+
+Legal_2_Title=Links and third-party content
+Legal_2_Text=This website may contain links to third-party pages and videos hosted on YouTube. I am not responsible for the content, privacy policies or cookies of those external sites.
+
+Legal_3_Title=Liability
+Legal_3_Text=I make an effort to keep the information on this site up to date and accurate, but I do not guarantee that it is error-free or that access will be uninterrupted. The owner is not liable for any damage arising from the use of the published information.
+
+Legal_4_Title=Personal data protection
+Legal_4_Text=This website has no forms, user accounts, comments, or analytics or advertising tools, so it does not automatically collect personal data. The only way to contact me is by email.
+Legal_4_Controller=Data controller: Eneko Tejera. Contact: enekotejera@gmail.com
+Legal_4_Purpose=Purpose: if you write to me, I will process your name, email address and the content of your message solely to reply to you and, where applicable, to handle a possible job offer or selection process.
+Legal_4_Basis=Legal basis: your consent, which you give by voluntarily contacting me.
+Legal_4_Retention=Retention: for as long as necessary to handle your enquiry or process and, afterwards, while legal liabilities may arise. You can ask me to delete your data at any time.
+Legal_4_Recipients=Recipients: I do not share your data with third parties, except where legally required. My email provider acts as a data processor to provide the email service.
+Legal_4_Rights=Rights: you can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to my email address. If you believe they have not been respected, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).
+
+Legal_5_Title=Cookies and YouTube videos
+Legal_5_Text=This website does not use its own analytics, advertising or tracking cookies. YouTube videos are not loaded when you enter the page: they are only loaded when you press the play button. At that point YouTube (Google) may set cookies and receive data such as your IP address, according to its own privacy policy. If you do not want this to happen, do not play the videos.
+Legal_5_Link=Google Privacy Policy
+
+Legal_6_Title=Language stored in your browser
+Legal_6_Text=This site stores the language you choose in your browser (localStorage) solely to remember your preference between pages. It is used for no other purpose, is not shared with third parties, and, since it is strictly necessary for the functionality you request by choosing a language, it does not require your consent.
+
+Legal_7_Title=Governing law and changes
+Legal_7_Text=This website is governed by Spanish law. I may modify this notice at any time to reflect legal or site changes. The current version is the one published on this page.
+
+FooterMess_0=Do you have a project in mind?
+FooterMess_1=You can contact me at:
+FooterMess_2=Go up ↑
+FooterMess_3=Designed and developed by Eneko Tejera
+FooterMess_4=Terms of use

@@ -1,0 +1,16 @@
+WebTittle=Eneko Tejera | Videojuego
+
+Link_0=About me
+Link_1=Engines
+Link_2=Games
+Link_3=Cybersecurity
+Link_4=Other Projects
+LanguageButtom=Languages
+SpanishButtom=Spanish
+EnglishButtom=English
+
+FooterMess_0=Do you have a proyect in mind?
+FooterMess_1=You can contact me at:
+FooterMess_2=Go up ↑
+FooterMess_3=Designed and developed by Eneko Tejera
+FooterMess_4=Terms of use

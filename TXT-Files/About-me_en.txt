@@ -1,0 +1,43 @@
+WebTittle=Eneko Tejera | Programmer & Designer
+
+Link_0=About me
+Link_1=Engines
+Link_2=Games
+Link_3=Cybersecurity
+Link_4=Other Projects
+LanguageButtom=Languages
+SpanishButtom=Spanish
+EnglishButtom=English
+
+Tittle_0=PROGRAMMER
+Tittle_1=DESIGNER
+Tittle_Label_0=C++
+Tittle_Label_1=DESIGN
+Tittle_Label_2=CYBERSECURITY
+Tittle_Scroll=SCROLL TO EXPLORE
+
+About-me=About me
+PresentationParagraph_0=Let me tell you who I am. My name is Eneko Tejera. I am a Spanish programmer and designer specializing in C++, with a great passion for video games and computers. I graduated from DigiPen University with a degree in Real-Time Interactive Simulation.
+PresentationParagraph_1=Although my experience is primarily focused on software development using C++, that doesn't stop me from learning new things. This has led me to study cybersecurity, a field I have been passionate about for a long time and one that I believe is always worth learning about, especially given the growing influence of technology in our daily lives.
+PresentationParagraph_2=Below, you'll find a little more information about me and my projects so you can get to know me a little better.
+
+Skills_0=Programming in C++
+Skills_0_1=Experience in software development using C++. Primarily focused on developing game engines and games themselves.
+
+Skills_1=Cybersecurity
+Skills_1_1=Studies in cybersecurity, with knowledge of web vulnerability assessment, process automation using Python, and forensic analysis of infected systems.
+
+Skills_2=And much more...
+Skills_2_1=I am passionate about learning new things, which is why I always strive to broaden my horizons. Here, you can explore some of my projects.
+
+Outro_0=Some of my projects
+Outro_1=Beloved Agatha.
+Outro_2=Game Jam 2026
+Outro_3=Some of my projects
+Outro_4=Some of my projects
+
+FooterMess_0=Do you have a project in mind?
+FooterMess_1=You can contact me at:
+FooterMess_2=Go up ↑
+FooterMess_3=Designed and developed by Eneko Tejera
+FooterMess_4=Terms of use

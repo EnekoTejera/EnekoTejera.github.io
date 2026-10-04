@@ -1,0 +1,34 @@
+WebTittle=Eneko Tejera | Videogames
+
+Link_0=About me
+Link_1=Engines
+Link_2=Games
+Link_3=Cybersecurity
+Link_4=Other Projects
+LanguageButtom=Languages
+SpanishButtom=Spanish
+EnglishButtom=English
+
+IntroductionTittle=MY GAMES
+IntroductionButton=EXPLORE BY PLAYING
+IntroductionScroll=-SCROLL TO EXPLORE-
+
+Game_0=Inertia
+Game_0_Description=Inertia is a Top-Down game in which the player has to get a ball into a goal by bouncing into blocks.
+Game_1=Zonk Deliveries
+Game_1_Description=Play as Garg, a delivery guy who has recently been recruited by a shipping company and must deliver shipments to clients in the minimum amount of time possible while avoiding obstacles within terrains full of bumps. Garg will use a gun that shoots ink that allows him to slide and jump all throughout the level making his way to his destination.
+Game_2=CrashNBurn
+Game_2_Description=A low-poly space-themed racing game featuring highly customizable ships that provide ways to hinder opponents or gain a more direct advantage.
+Game_3=Beloved Agatha.
+Game_3_Description=Beloved Agatha. is a single-player, first-person game about investigating the protagonist Edmund’s old orphanage after he receives a mysterious letter from a childhood friend he hasn’t heard from in years—a girl named Agatha.
+Game_4=Pop the pops
+Game_4_Description=Race against your old enemy and bounce around to beat them on frenetic obstacle courses. Get the highest score to win!
+Game_5=Mucho macho
+Game_5_Description=It's your first day as a bounty hunter, and you've been tasked with bringing down a new wrestler who has been getting quite popular in your area. Find the pieces of your target's mask, and with the help of your supervisor, locate and neutralize your target before your cover is blown!
+GameExtend=More information
+
+FooterMess_0=Do you have a project in mind?
+FooterMess_1=You can contact me at:
+FooterMess_2=Go up ↑
+FooterMess_3=Designed and developed by Eneko Tejera
+FooterMess_4=Terms of use

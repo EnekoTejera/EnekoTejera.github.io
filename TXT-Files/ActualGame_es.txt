@@ -1,0 +1,16 @@
+WebTittle=Eneko Tejera | Videogame
+
+Link_0=Sobre mí
+Link_1=Motores
+Link_2=Juegos
+Link_3=Ciberseguridad
+Link_4=Otros proyectos
+LanguageButtom=Idiomas
+SpanishButtom=Español
+EnglishButtom=Inglés
+
+FooterMess_0=¿Tienes un proyecto en mente?
+FooterMess_1=Puedes escribirme a:
+FooterMess_2=Volver arriba ↑
+FooterMess_3=Diseñado y desarrollado por Eneko Tejera
+FooterMess_4=Aviso legal y privacidad

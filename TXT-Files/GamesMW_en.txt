@@ -1,0 +1,77 @@
+[MuchoMacho]
+Tittle=Mucho Macho
+Image0=../Assets/01_GAMES/MM_0.webp
+Image1=../Assets/01_GAMES/MM_1.webp
+Image2=../Assets/01_GAMES/MM_2.webp
+Link=https://cebalya.itch.io/mucho-macho
+Buttom=Go to game
+Labels=UNITY,PC AND ANDROID,PUZZLES,COOPERATIVE,TWO-PLAYER ASYMMETRIC LOCAL NETWORK
+SectionTittle0=Project Overview
+ModalText0=Mucho Macho is an asymmetric two-player cooperative puzzle game developed in Unity. One player plays on a computer while the other uses a mobile device. Together, they must identify a target by finding and assembling pieces of a mask, then communicating the completed design to locate the correct person in the wrestling ring. The project focuses on communication, cooperation, and the design of an unusual cross-platform multiplayer experience.
+SectionTittle1=Technical Focus
+ModalText1=The game combines a desktop application with an Android companion app connected over a local Wi-Fi network. This setup required coordinating gameplay information between two different devices and designing an interaction model in which each player has access to different pieces of information.
+
+[PopThePops]
+Tittle=Pop The Pops
+Image0=../Assets/01_GAMES/PTP_0.webp
+Image1=../Assets/01_GAMES/PTP_1.webp
+Image2=../Assets/01_GAMES/PTP_2.webp
+Link=https://ign-ceo.itch.io/pop-the-pops
+Buttom=Go to game
+Labels=UNITY,PC,LOCAL MULTIPLAYER,PLATFORMER,TWO-PLAYER
+SectionTittle0=Project Overview
+ModalText0=Pop the Pops is a fast-paced local multiplayer platformer in which two players compete across frenetic obstacle courses. Players must navigate the level, bounce through its challenges, and achieve the highest score before their opponent. The game is designed around short, competitive sessions and direct player-versus-player interaction.
+SectionTittle1=Technical Focus
+ModalText1=The project focuses on responsive platforming, competitive multiplayer gameplay, and the implementation of obstacle courses that encourage movement, timing, and quick decision-making. Its design emphasizes immediate interaction and replayability through short matches.
+
+[BelovedAgatha]
+Tittle=Beloved Agatha.
+Image0=../Assets/01_GAMES/BA_0.webp
+Image1=../Assets/01_GAMES/BA_1.webp
+Image2=../Assets/01_GAMES/BA_2.webp
+Link=https://www.digipen.es/showcase/student-games/beloved-agatha
+Buttom=Go to game
+Labels=UNREAL,PC,PUZZLES,FIRST-PERSON
+SectionTittle0=Project Overview
+ModalText0=Beloved Agatha is a single-player, first-person puzzle game centered on investigation, exploration, and environmental storytelling. The player takes the role of Edmund, who returns to his old orphanage after receiving a mysterious letter from Agatha, a childhood friend he has not heard from in years. As he explores the abandoned building, he must solve puzzles, uncover clues, and piece together the events surrounding the disappearance of his friend and the orphanage.
+SectionTittle1=Technical Focus
+ModalText1=The project combines first-person exploration with environmental puzzles and narrative discovery. Its design relies on the relationship between the environment, interactive objects, and the clues distributed throughout the setting to gradually reveal the story.
+
+[CrashNBurn]
+Tittle=CrashNBurn
+Image0=../Assets/01_GAMES/CNB_0.webp
+Image1=../Assets/01_GAMES/CNB_1.webp
+Image2=../Assets/01_GAMES/CNB_2.webp
+Link=https://www.digipen.es/es/galeria/juegos-de-estudiantes/crashnburn
+Buttom=Go to game
+Labels=CUSTOM ENGINE,PC,SPACE RACING,LOCAL MULTIPLAYER,LOW-POLY
+SectionTittle0=Project Overview
+ModalText0=CrashNBurn is a low-poly space racing game featuring highly customizable spacecraft. Players compete on space-themed tracks while using different ship components and abilities to gain advantages or interfere with their opponents. The combination of racing, customization, and competitive mechanics creates a gameplay experience focused on speed, positioning, and tactical decision-making.
+SectionTittle1=Technical Focus
+ModalText1=The project combines racing gameplay with customizable vehicles and competitive mechanics. Its development involved creating systems that support different ship configurations, racing interactions, and the behavior of opponents within the tracks.
+
+[ZonkDeliveries]
+Tittle=Zonk Deliveries
+Image0=../Assets/01_GAMES/ZD_0.webp
+Image1=../Assets/01_GAMES/ZD_1.webp
+Image2=../Assets/01_GAMES/ZD_2.webp
+Link=https://games.digipen.edu/games/zonk-deliveries
+Buttom=Go to game
+Labels=CUSTOM ENGINE,PC,PLATAFORMER
+SectionTittle0=Project Overview
+ModalText0=Zonk Deliveries is a platformer in which the player takes control of Garg, a delivery worker who must transport packages to their destinations as quickly as possible. The levels are filled with uneven terrain and obstacles, while the player's ink-shooting weapon provides a distinctive movement mechanic that allows Garg to slide and jump through the environment.
+SectionTittle1=Technical Focus
+ModalText1=The project is built around movement-based gameplay and the interaction between the character's abilities and the level geometry. The ink mechanic introduces an additional layer of control, allowing players to use the environment and their own movement to navigate efficiently.
+
+[Inertia]
+Tittle=Inertia
+Image0=../Assets/01_GAMES/I_0.webp
+Image1=../Assets/01_GAMES/I_1.webp
+Image2=../Assets/01_GAMES/I_2.webp
+Link=https://games.digipen.edu/games/inertia
+Buttom=Go to game
+Labels=CUSTOM ENGINE,PC,PUZZLES,TOP-DOWN
+SectionTittle0=Project Overview
+ModalText0=Inertia is a top-down puzzle game in which the player must guide a ball into a goal by bouncing it off blocks. The game is centered on understanding the movement of the ball, predicting its trajectory, and using the available geometry to reach the objective. Its simple premise creates a gameplay experience focused on spatial reasoning and precision.
+SectionTittle1=Technical Focus
+ModalText1=The project focuses on the interaction between movement, collision, and level geometry. The core challenge comes from understanding how the ball behaves when it interacts with different blocks and using that behavior to solve each puzzle.
