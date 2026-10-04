@@ -1,0 +1,93 @@
+{
+    "activeFile": "Level_1.json",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Guia.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Level_1.json": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 1800,
+                "y": 198.75
+            }
+        },
+        "Level_1.json#ejemplo": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "Level_1.json#tile_e": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "Level_1.tmj": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 850.6666666666667,
+                "y": 368
+            }
+        },
+        "ejemplo.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "level1.json": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 950,
+                "y": 249.625
+            }
+        },
+        "level1.json#tilemap": {
+            "scaleInDock": 1
+        },
+        "tile_e.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Eneko/Desktop/Pagina Web/Assets/Levels",
+    "last.imagePath": "C:/Users/Eneko/Desktop/Pagina Web/Assets/01_GAMES",
+    "map.fixedSize": false,
+    "map.height": 18,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 18,
+    "map.tileWidth": 18,
+    "map.width": 18,
+    "openFiles": [
+        "Level_1.json",
+        "tile_e.tsx",
+        "level1.json",
+        "ejemplo.tsx"
+    ],
+    "project": "Level_1.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "ejemplo.tsx",
+        "level1.json",
+        "tile_e.tsx",
+        "Level_1.json",
+        "Guia.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 18,
+        "width": 18
+    },
+    "tileset.type": 1
+}
