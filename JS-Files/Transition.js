@@ -9,16 +9,28 @@
  */
 (() => { "use strict";
 
-    const SCRIPT_URL = document.currentScript && document.currentScript.src
+    //Script location (must be read synchronously, before any await).
+    //With type="module" currentScript is null, so it falls back to the page URL.
+    const SCRIPT_URL = ( document.currentScript && document.currentScript.src )
                        ? document.currentScript.src
                        : window.location.href;
+
     //Configuration
     const CONFIG = {
 
+        //Relative to Transition.js, not to the HTML page
         logoPath            : new URL( "../Assets/portfolio-logo.svg", SCRIPT_URL ).href,
+
         holdAfterLogoMs     : 220,         //Pause after finishing the logo
         minimumVisibleMs    : 650,         //Initial transition minimun time
-        resourceTimeoutMs   : 10000,       //Maximun waiting time
+        resourceTimeoutMs   : 10000,       //Maximun waiting time per resource
+        maxWaitMs           : 6000,        //Max wait for the whole page content
+        hardTimeoutMs       : 12000,       //Failsafe: force the page to show
+
+        drawPathMs          : 500,         //Duration of each stroke
+        drawStaggerMs       : 150,         //Delay between strokes
+        loopPauseMs         : 250,         //Pause between logo repetitions
+
         textLoadedEvent     : "TextLoaded",//Text loaded event
         internalLinkSelector: "a[href]"    //Internal links
     };
@@ -123,8 +135,7 @@
 
         try {
 
-            const response = await fetch( CONFIG.logoPath,
-                                          { cache: "force-cache" } );
+            const response = await fetch( CONFIG.logoPath );
 
 
             if (!response.ok)
@@ -152,7 +163,7 @@
         }
         catch (error) {
 
-            console.warn( "Transition.js: Logo couldn't be loaded", error );
+            console.warn( "Transition.js: Logo couldn't be loaded", CONFIG.logoPath, error );
             return createFallbackSvg();
         }
     }
@@ -170,10 +181,10 @@
 
         svg.setAttribute( "aria-hidden", "true" );
 
-        const paths = [ "M200 40 L362 202 L232 370 L32 170 Z",
-                        "M117 125 L200 208 L278 286",
-                        "M137 270 L200 208",
-                        "M32 170 L362 202" ];
+        const paths = [ "M190 30 L368 209 L207 370 L30 191 Z",
+                        "M113 108 L290 287",
+                        "M123 285 L205 201",
+                        "M30 191 L368 209" ];
 
 
         paths.forEach(d => {
@@ -184,6 +195,18 @@
         });
 
         return svg;
+    }
+
+    function pathLength(path) {
+
+        try {
+
+            return path.getTotalLength();
+        }
+        catch {
+
+            return 2000;
+        }
     }
 
     //Create the overlay
@@ -206,48 +229,19 @@
         state.svg = svg;
         state.paths = [ ...svg.querySelectorAll("path") ];
 
-        state.paths.forEach(path => {
-
-            let length;
-
-            try {
-
-                length = path.getTotalLength();
-            }
-            catch {
-
-                length = 2000;
-            }
-
-
-            path.style.strokeDasharray = `${length}`;
-
-            path.style.strokeDashoffset = `${length}`;
-        });
+        resetLogo();
     }
 
-    //Reset logo to its original state
+    //Reset logo to its original state (hidden stroke)
     function resetLogo() {
 
         state.paths.forEach(path => {
 
-            let length;
+            path.getAnimations().forEach( anim => anim.cancel() );
 
-            try {
+            const length = pathLength(path);
 
-                length = path.getTotalLength();
-
-            }
-            catch {
-
-                length = 2000;
-            }
-
-
-            path.classList.remove( "is-drawing", "is-complete" );
-
-
-            path.style.strokeDasharray = `${length}`;
+            path.style.strokeDasharray  = `${length}`;
             path.style.strokeDashoffset = `${length}`;
         });
     }
@@ -265,7 +259,7 @@
         document.documentElement.classList.remove( "page-ready" );
     }
 
-    //Draw the logo
+    //Draw the logo (Web Animations API, independent from the CSS classes)
     async function drawLogo() {
 
         if (!state.paths.length)
@@ -275,45 +269,36 @@
 
         if (reducedMotion()) {
 
-            state.paths.forEach(path => {
-
-                path.classList.add( "is-complete" );
-
-
-                path.style.strokeDashoffset = "0";
-            });
-
+            state.paths.forEach( path => path.style.strokeDashoffset = "0" );
             return;
         }
 
-        //Draw overlay
         await nextFrame();
+
+        const animations = [];
 
         for ( const path of state.paths ) {
 
-            path.classList.add( "is-drawing" );
+            const length = pathLength(path);
 
-            void path.getBoundingClientRect();
+            animations.push( path.animate(
 
-            await nextFrame();
+                [ { strokeDashoffset: length }, { strokeDashoffset: 0 } ],
+                { duration: CONFIG.drawPathMs, easing: "ease-in-out", fill: "forwards" }
+            ));
 
-            path.classList.add( "is-complete" );
-            await sleep(100);
+            await sleep( CONFIG.drawStaggerMs );
         }
 
-        await sleep(200);
-
-        state.paths.forEach(path => {
-
-            path.classList.remove( "is-drawing" );
-
-        });
+        //Wait for the last stroke to finish
+        await Promise.all( animations.map( a => a.finished.catch( () => {} ) ) );
     }
 
     //Wait for the images to load
     function waitForImages() {
 
-        const images = [ ...document.images ];
+        //Lazy images may never load while off-screen, so they are ignored
+        const images = [ ...document.images ].filter( img => img.loading !== "lazy" );
 
         if (!images.length)
             return Promise.resolve();
@@ -329,12 +314,14 @@
 
                     img.addEventListener( "load", done, { once: true } );
                     img.addEventListener( "error", done, { once: true } );
+
+                    setTimeout( done, CONFIG.resourceTimeoutMs );
                 });
             })
         );
     }
 
-    //Wait for the images to load
+    //Wait for the videos to load
     function waitForVideos() {
 
         const videos = [ ...document.querySelectorAll( "video" ) ];
@@ -406,13 +393,18 @@
         });
     }
 
-    //Prepare the new page
+    //Prepare the new page (with a global cap so it can never hang)
     async function prepareCurrentPage() {
 
-        await Promise.all([ waitForImages(),
-                            waitForVideos(),
-                            waitForFonts(),
-                            waitForTextLoaded() ]);
+        await Promise.race([
+
+            Promise.all([ waitForImages(),
+                          waitForVideos(),
+                          waitForFonts(),
+                          waitForTextLoaded() ]),
+
+            sleep( CONFIG.maxWaitMs )
+        ]);
 
         state.ready = true;
     }
@@ -438,6 +430,21 @@
         document.documentElement.classList.remove( "page-leaving" );
     }
 
+    //Failsafe: always show the page
+    function forceReveal() {
+
+        if (state.leaving)
+            return;
+
+        const root = document.documentElement;
+
+        root.classList.add( "page-ready" );
+        root.classList.remove( "page-loading", "page-leaving" );
+
+        if (state.overlay)
+            state.overlay.classList.add( "is-hidden" );
+    }
+
     //Start the transition
     async function startInitialTransition() {
 
@@ -447,21 +454,27 @@
         await createOverlay();
         showOverlayImmediately();
 
-        //Draw the logo
-        await drawLogo();
+        //Load the content in parallel
+        const loading = prepareCurrentPage();
 
-        //Wait for everything to load
-        await prepareCurrentPage();
+        //Repeat the logo until everything is loaded and the minimum time has
+        //passed. The current cycle always finishes, so the logo is never cut.
+        while (true) {
 
-        //Minimun wait
-        const elapsed = performance.now() - state.startedAt;
-        const remaining = Math.max( 0, CONFIG.minimumVisibleMs - elapsed );
+            await drawLogo();
 
+            await sleep( CONFIG.holdAfterLogoMs );
 
-        if (remaining > 0)
-            await sleep( remaining );
+            const minimumReached = ( performance.now() - state.startedAt )
+                                   >= CONFIG.minimumVisibleMs;
 
-        await sleep( CONFIG.holdAfterLogoMs );
+            if ( state.ready && minimumReached )
+                break;
+
+            await sleep( CONFIG.loopPauseMs );
+        }
+
+        await loading;
 
         //Finish by showing the page
         await hideOverlay();
@@ -474,11 +487,20 @@
 
         state.leaving = true;
 
-        showOverlayImmediately();
+        try {
 
-        await drawLogo();
+            await createOverlay();
 
-        await sleep( CONFIG.holdAfterLogoMs );
+            showOverlayImmediately();
+
+            await drawLogo();
+
+            await sleep( CONFIG.holdAfterLogoMs );
+        }
+        catch (error) {
+
+            console.error( "Transition.js: leaving transition failed", error );
+        }
 
         window.location.assign( url );
     }
@@ -540,6 +562,7 @@
                 restoreFromCache();
         }
     );
+
     window.PortfolioTransition = {
 
         ready() {
@@ -561,22 +584,32 @@
         //Page blocked
         document.documentElement.classList.add( "page-loading" );
 
+        //Last resort if anything gets stuck
+        setTimeout( forceReveal, CONFIG.hardTimeoutMs );
+
         installNavigation();
 
-        if (reducedMotion()) {
+        try {
 
-            await createOverlay();
+            if (reducedMotion()) {
 
-            await prepareCurrentPage();
+                await createOverlay();
 
-            document.documentElement.classList.add( "page-ready" );
-            document.documentElement.classList.remove( "page-loading" );
-            state.overlay.classList.add( "is-hidden" );
+                await prepareCurrentPage();
 
-            return;
+                forceReveal();
+
+                return;
+            }
+
+            await startInitialTransition();
         }
+        catch (error) {
 
-        await startInitialTransition();
+            console.error( "Transition.js: transition failed", error );
+
+            forceReveal();
+        }
     }
 
     //Entry point
