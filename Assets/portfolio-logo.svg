@@ -3,24 +3,24 @@
      role="img"
      aria-labelledby="title desc">
   <title id="title">Geometric portfolio logo</title>
-  <desc id="desc">Refined vector version of the supplied geometric sketch.</desc>
+  <desc id="desc">Rotated square divided by a long diagonal, a short lower-left diagonal and a nearly horizontal line.</desc>
 
   <g fill="none"
      stroke="currentColor"
-     stroke-width="4.2"
+     stroke-width="5"
      stroke-linecap="round"
      stroke-linejoin="round">
 
     <!-- Outer rotated square -->
-    <path d="M200 40 L362 202 L232 370 L32 170 Z"/>
+    <path d="M190 30 L368 209 L207 370 L30 191 Z"/>
 
-    <!-- Internal diagonal -->
-    <path d="M117 125 L200 208 L278 286"/>
+    <!-- Long diagonal, from the upper-left edge to the lower-right edge -->
+    <path d="M113 108 L290 287"/>
 
-    <!-- Lower-left diagonal -->
-    <path d="M137 270 L200 208"/>
+    <!-- Short diagonal, from the lower-left edge to the center -->
+    <path d="M123 285 L205 201"/>
 
-    <!-- Slightly rising/falling central divider from left to right -->
-    <path d="M32 170 L362 202"/>
+    <!-- Nearly horizontal line, from the left corner to the right corner -->
+    <path d="M30 191 L368 209"/>
   </g>
 </svg>
