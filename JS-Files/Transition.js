@@ -9,10 +9,13 @@
  */
 (() => { "use strict";
 
+    const SCRIPT_URL = document.currentScript && document.currentScript.src
+                       ? document.currentScript.src
+                       : window.location.href;
     //Configuration
     const CONFIG = {
 
-        logoPath            : "../Assets/portfolio-logo.svg",
+        logoPath            : new URL( "../Assets/portfolio-logo.svg", SCRIPT_URL ).href,
         holdAfterLogoMs     : 220,         //Pause after finishing the logo
         minimumVisibleMs    : 650,         //Initial transition minimun time
         resourceTimeoutMs   : 10000,       //Maximun waiting time
