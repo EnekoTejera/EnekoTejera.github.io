@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 400 400"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">Geometric portfolio logo</title>
+  <desc id="desc">Refined vector version of the supplied geometric sketch.</desc>
+
+  <g fill="none"
+     stroke="currentColor"
+     stroke-width="4.2"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- Outer rotated square -->
+    <path d="M200 40 L362 202 L232 370 L32 170 Z"/>
+
+    <!-- Internal diagonal -->
+    <path d="M117 125 L200 208 L278 286"/>
+
+    <!-- Lower-left diagonal -->
+    <path d="M137 270 L200 208"/>
+
+    <!-- Slightly rising/falling central divider from left to right -->
+    <path d="M32 170 L362 202"/>
+  </g>
+</svg>
